@@ -1,0 +1,37 @@
+@import "blocks/variables";
+@import "blocks/_header";
+@import "blocks/_promo";
+@import "blocks/_editor";
+
+html {
+    font-family: 'Montserrat', 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a:link, a:visited {
+    color: $violet;
+    text-decoration: none;
+}
+
+.main_button {
+    padding: 11px 3px;
+    border-radius: 25px;
+    background-color: $violet;
+    border: none;
+    color: $white;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 15px;
+    font-weight: 700;
+}
+button, button:active {
+    outline: none;
+}
+

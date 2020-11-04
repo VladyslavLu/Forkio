@@ -1,0 +1,53 @@
+.header {
+    max-height: 100px;
+    background-color: $dark;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px auto;
+        .menu {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding-left: 0;
+        }
+        .header_logo {
+            display: flex;
+            align-items: center;
+            height: 41px;
+            width: 43px;
+            }
+            .text_logo {
+                font-size: 24px;
+                line-height: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 40px auto 40px 17px;
+                color: $violet;
+            }
+        }
+        .menu_item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 24px
+        }
+        .menu_link:link, 
+        .menu_link:visited {
+            font-size: 16px;
+            line-height: 15px;
+            font-weight: 700;
+        }
+        .menu_link:hover {
+            color: $white;
+        }
+        .button_buy {
+            width: 145px;
+        }
+        .button_buy:hover {
+            background-color: $white;
+            color: $violet;
+        }
+    }
+

@@ -1,0 +1,46 @@
+html {
+  font-family: "Montserrat", "Lato", sans-serif;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a:link, a:visited {
+  color: violet;
+  text-decoration: none;
+}
+
+.header {
+  min-width: 100px;
+  background-color: #323232;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header .container .menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+}
+.header .container .header_logo {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  width: 43px;
+}
+.header .container .header_logo .text_logo {
+  margin: 40px auto 40px 17px;
+  color: viol;
+}
+.header .container .menu_link {
+  margin: 10px;
+}

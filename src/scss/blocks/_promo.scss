@@ -1,0 +1,62 @@
+.promo {
+    background-image: url(../img/promo_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 800px;
+    position: relative;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .promo_header {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 82px;
+            font-weight: 700;
+            color: $white;
+        }
+        .promo_subheader,
+        .promo_descr {
+            margin-top: 18px;
+        }
+        
+        .promo_subheader {
+            font-size: 30px;
+            line-height: 1;
+            font-weight: 400;
+            color: $violet;
+        }
+
+        .promo_descr {
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $grey;
+        }
+
+    }
+        #download_app {
+            position: absolute;
+            font-size: 21px;
+            padding: 23px;
+            width: 390px;
+            border-radius: 50px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        #download_app:after {
+            content: "Unlimited 30-Days Trial Period";
+            position: absolute;
+            top: calc(100% + 19px);
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: $grey;
+            font-weight: 400;
+            width: 100%;
+        }
+    }
+
+

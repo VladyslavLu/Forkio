@@ -1,0 +1,55 @@
+.editor {
+    min-height: 391px;
+    background-color: $white;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .editor_header {
+            margin-top: 129px;
+            font-size: 54px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #635c73;
+            text-align: center;
+        }
+        .grid {
+            max-width: 913px;
+            .editor_subheader {
+                margin-top: 38px;
+                font-size: 21px;
+                font-family: Lato;
+                font-weight: 400;
+                color: $dark;
+                opacity: 0.8;
+                text-align: center;
+            }
+        }
+        .tooltipped {
+            position: relative;
+            .btn-with-count {
+                float: left;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .btn-sm {
+                padding: 3px 12px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .btn {
+                display: inline-block;
+                white-space: nowrap;
+                vertical-align: middle;
+                cursor: pointer;
+                user-select: none;
+                border: 1px solid;
+                border-radius: 6px;
+                appearance: none;
+            }
+            a {
+                text-decoration: none;
+            }
+        }  
+    }
+}
