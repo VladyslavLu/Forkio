@@ -198,38 +198,82 @@
         color: #323232;
         opacity: 0.8;
         text-align: center; }
-    .editor .container .tooltipped {
-      position: relative; }
-      .editor .container .tooltipped .btn-with-count {
+    .editor .container .pagehead-actions > li {
+      float: left;
+      margin: 0 10px 0 0;
+      font-size: 11px;
+      color: var(--color-text-primary);
+      list-style-type: none; }
+      .editor .container .pagehead-actions > li li {
+        display: list-item;
+        text-align: -webkit-match-parent; }
+      .editor .container .pagehead-actions > li .tooltipped {
+        position: relative; }
+        .editor .container .pagehead-actions > li .tooltipped .btn-with-count {
+          float: left;
+          -webkit-border-top-right-radius: 0;
+          -moz-border-radius-topright: 0;
+          border-top-right-radius: 0;
+          -webkit-border-bottom-right-radius: 0;
+          -moz-border-radius-bottomright: 0;
+          border-bottom-right-radius: 0; }
+        .editor .container .pagehead-actions > li .tooltipped .btn-sm {
+          padding: 3px 12px;
+          font-size: 12px;
+          line-height: 20px; }
+        .editor .container .pagehead-actions > li .tooltipped .btn {
+          display: inline-block;
+          white-space: nowrap;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          border: 1px solid;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          border-radius: 6px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          color: var(--color-btn-text);
+          background-color: var(--color-btn-bg);
+          border-color: var(--color-btn-border);
+          -webkit-box-shadow: var(--color-btn-shadow), var(--color-btn-inset-shadow);
+          -moz-box-shadow: var(--color-btn-shadow), var(--color-btn-inset-shadow);
+          box-shadow: var(--color-btn-shadow), var(--color-btn-inset-shadow);
+          -webkit-transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+          -o-transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+          -moz-transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+          transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+          -webkit-transition-property: color,background-color,border-color;
+          -o-transition-property: color,background-color,border-color;
+          -moz-transition-property: color,background-color,border-color;
+          transition-property: color,background-color,border-color; }
+        .editor .container .pagehead-actions > li .tooltipped a {
+          text-decoration: none; }
+      .editor .container .pagehead-actions > li .social-count {
+        position: relative;
         float: left;
-        -webkit-border-top-right-radius: 0;
-        -moz-border-radius-topright: 0;
-        border-top-right-radius: 0;
-        -webkit-border-bottom-right-radius: 0;
-        -moz-border-radius-bottomright: 0;
-        border-bottom-right-radius: 0; }
-      .editor .container .tooltipped .btn-sm {
         padding: 3px 12px;
         font-size: 12px;
-        line-height: 20px; }
-      .editor .container .tooltipped .btn {
-        display: inline-block;
-        white-space: nowrap;
+        font-weight: 600;
+        line-height: 20px;
+        color: var(--color-text-primary);
         vertical-align: middle;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        border: 1px solid;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        border-radius: 6px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none; }
-      .editor .container .tooltipped a {
-        text-decoration: none; }
+        background-color: var(--color-social-count-bg);
+        border: 1px solid var(--color-btn-border);
+        border-left: 0;
+        -webkit-border-top-right-radius: 6px;
+        -moz-border-radius-topright: 6px;
+        border-top-right-radius: 6px;
+        -webkit-border-bottom-right-radius: 6px;
+        -moz-border-radius-bottomright: 6px;
+        border-bottom-right-radius: 6px;
+        -webkit-box-shadow: var(--color-shadow-small), var(--color-shadow-highlight);
+        -moz-box-shadow: var(--color-shadow-small), var(--color-shadow-highlight);
+        box-shadow: var(--color-shadow-small), var(--color-shadow-highlight); }
 
 html {
   font-family: 'Montserrat', 'Lato', sans-serif;

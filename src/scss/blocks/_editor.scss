@@ -25,31 +25,65 @@
                 text-align: center;
             }
         }
-        .tooltipped {
-            position: relative;
-            .btn-with-count {
-                float: left;
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
+        .pagehead-actions>li {
+            float: left;
+            margin: 0 10px 0 0;
+            font-size: 11px;
+            color: var(--color-text-primary);
+            list-style-type: none;
+            li {
+                display: list-item;
+                text-align: -webkit-match-parent;
             }
-            .btn-sm {
+            .tooltipped {
+                position: relative;
+                .btn-with-count {
+                    float: left;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                .btn-sm {
+                    padding: 3px 12px;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                .btn {
+                    display: inline-block;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    user-select: none;
+                    border: 1px solid;
+                    border-radius: 6px;
+                    appearance: none;
+                    color: var(--color-btn-text);
+                    background-color: var(--color-btn-bg);
+                    border-color: var(--color-btn-border);
+                    box-shadow: var(--color-btn-shadow),var(--color-btn-inset-shadow);
+                    transition: .2s cubic-bezier(.3,0,.5,1);
+                    transition-property: color,background-color,border-color;
+                }
+                a {
+                    text-decoration: none;
+                }
+            }  
+            .social-count {
+                position: relative;
+                float: left;
                 padding: 3px 12px;
                 font-size: 12px;
+                font-weight: 600;
                 line-height: 20px;
-            }
-            .btn {
-                display: inline-block;
-                white-space: nowrap;
+                color: var(--color-text-primary);
                 vertical-align: middle;
-                cursor: pointer;
-                user-select: none;
-                border: 1px solid;
-                border-radius: 6px;
-                appearance: none;
+                background-color: var(--color-social-count-bg);
+                border: 1px solid var(--color-btn-border);
+                border-left: 0;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                box-shadow: var(--color-shadow-small),var(--color-shadow-highlight);
             }
-            a {
-                text-decoration: none;
-            }
-        }  
+        }
+        
     }
 }
